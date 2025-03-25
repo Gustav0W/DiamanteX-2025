@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamante", "Diamante\Diamante.csproj", "{893C9440-4A50-4E72-A891-3923E9621A39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamante.ConsoleApp", "Diamante\Diamante.ConsoleApp.csproj", "{893C9440-4A50-4E72-A891-3923E9621A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
