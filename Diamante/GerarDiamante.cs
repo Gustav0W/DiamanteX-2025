@@ -4,21 +4,26 @@
     {
         public static int ColetarValor(int valor = 0)
         {
-            Console.Clear();
-            Console.Write("Informe um número ímpar: ");
-            if (!int.TryParse(Console.ReadLine(), out int tamanho))
-            {
-                Console.WriteLine("Número INTEIRO inválido. \nAperte ENTER para tentar novamente");
-                Console.ReadLine();
-            }
+            do {
+                Console.Clear();
+                Console.Write("Informe um número ímpar: ");
+                if (!int.TryParse(Console.ReadLine(), out int tamanho))
+                {
+                    Console.WriteLine("Número INTEIRO inválido. \nAperte ENTER para tentar novamente");
+                    Console.ReadLine();
+                    continue;
+                }
 
-            if (tamanho % 2 == 0)
-            {
-                Console.WriteLine("Número informado não é ímpar. \nAperte ENTER para continuar");
-                Console.ReadLine();
-            }
-            valor = tamanho;
-            return valor;
+                if (tamanho % 2 == 0)
+                {
+                    Console.WriteLine("Número informado não é ímpar. \nAperte ENTER para continuar");
+                    Console.ReadLine();
+                    continue;
+                }
+                valor = tamanho;
+                return valor;
+            } while (true);
+
         }
         public static void MostrarDiamante(int tamanho)
         {
